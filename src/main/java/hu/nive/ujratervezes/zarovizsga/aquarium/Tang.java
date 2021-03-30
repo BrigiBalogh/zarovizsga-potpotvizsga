@@ -5,7 +5,6 @@ public class Tang extends Fish {
         super(name, weight, color);
     }
 
-
     @Override
     public void feed() {
         weight += 1;

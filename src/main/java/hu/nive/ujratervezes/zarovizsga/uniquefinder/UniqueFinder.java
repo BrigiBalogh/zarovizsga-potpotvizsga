@@ -5,7 +5,7 @@ import java.util.*;
 public class UniqueFinder {
     public List<Character> uniqueChars(String s) {
 
-        if (s == null ) {
+        if (s == null) {
             throw new IllegalArgumentException("Invalid data !");
         }
 

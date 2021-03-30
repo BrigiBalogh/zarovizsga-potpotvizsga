@@ -13,22 +13,22 @@ public class DaVinciCode {
             throw new IllegalArgumentException(" The data is invalid" + c);
         }
 
-        try(BufferedReader reader = new BufferedReader(new FileReader(input))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(input))) {
 
-           int count = 0;
-           String line;
+            int count = 0;
+            String line;
 
-           while ((line = reader.readLine()) != null) {
-               for (char cc : line.toCharArray()) {
-                   if (cc == c) {
-                       count++;
-                   }
-               }
-           }
-           return count;
+            while ((line = reader.readLine()) != null) {
+                for (char cc : line.toCharArray()) {
+                    if (cc == c) {
+                        count++;
+                    }
+                }
+            }
+            return count;
 
-        }catch (IOException ioe) {
-            throw new IllegalStateException("Cannot read file !",ioe);
+        } catch (IOException ioe) {
+            throw new IllegalStateException("Cannot read file !", ioe);
         }
 
     }

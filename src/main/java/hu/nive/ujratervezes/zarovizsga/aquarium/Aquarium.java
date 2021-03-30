@@ -22,11 +22,11 @@ public class Aquarium {
     }
 
     public void removeFish() {
-        Iterator<Fish> iter = fishes.iterator();
-        while(iter.hasNext()) {
-            Fish fish = iter.next();
+        Iterator<Fish> it = fishes.iterator();
+        while (it.hasNext()) {
+            Fish fish = it.next();
             if (fish.getWeight() >= 11) {
-                iter.remove();
+                it.remove();
             }
         }
     }
