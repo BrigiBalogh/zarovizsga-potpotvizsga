@@ -37,3 +37,12 @@ public class Aquarium {
         }
     }
 }
+
+/* List<String> names = new ArrayList<>(List.of("John Doe", "Jack Doe", "John Smith"));
+Iterator<String> it = names.iterator();
+while (it.hasNext()) {
+    String name = it.next();
+    if (name.startsWith("John")) {
+        it.remove();
+    }
+}  */
